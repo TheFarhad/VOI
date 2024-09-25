@@ -1,0 +1,42 @@
+﻿@Host = https://localhost:7121
+@Route = {{Host}}/api/Keyword
+
+POST {{Route}}/add-keyword
+Content-Type: application/json
+
+{
+  "title": "کیورد شماره 16",
+  "description": "توضیحات کیورد شماره 16"
+}
+######################
+
+PUT {{Route}}/change-title
+Content-Type: application/json
+
+{
+  "code": "028B561B-4D08-4B53-A326-95CC243AFE41",
+  "title": "کیورد شماره 333"
+}
+######################
+
+DELETE {{Route}}/delete-keyword
+Content-Type: application/json
+
+{
+  "Code" : "2563f366-efa9-41ef-9f68-d656425ef86a"
+}
+######################
+
+GET {{Route}}/
+Content-Type: application/json
+
+{
+  "page": 1,
+  "size": 2,
+  "sortAscending": false,
+  "sortBy": "Id",
+  "neededTotalCount": true,
+  "title": "کیورد",
+  "status": "Preview"
+}
+######################

@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Folder Include="Core\Application\Command\" />
+		<Folder Include="Core\Application\Query\" />
+		<Folder Include="Core\Contract\Application\Command\" />
+		<Folder Include="Core\Contract\Application\Event\" />
+		<Folder Include="Core\Contract\Application\Query\" />
+		<Folder Include="Core\Contract\Infra\ExternalApi\" />
+		<Folder Include="Core\Domain\Aggregate\Policy\" />
+		<Folder Include="Core\Domain\Aggregate\Specification\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Tool\Tool.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+		<PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="8.0.8" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.8">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8" />
+	</ItemGroup>
+
+</Project>

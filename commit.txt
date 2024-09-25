@@ -1,0 +1,19 @@
+﻿feature: Add 
+
+Body...
+
+no issue or pull request associated with this commit
+issue: fixes #1234 OR closes #1234 OR 
+-------------------------------------------------------------
+solution structure
+feature
+refactor
+test
+style
+documents
+fix (bug fix)
+preformance 
+config (changes in configuration files)
+security 
+revert (undo or revert previous changes)
+tools

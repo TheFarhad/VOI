@@ -1,0 +1,1 @@
+BrowserGateway.EntryPoint.Host(args);

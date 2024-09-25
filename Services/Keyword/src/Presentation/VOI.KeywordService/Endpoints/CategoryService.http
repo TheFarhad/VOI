@@ -1,0 +1,32 @@
+﻿@Host = https://localhost:7761
+@Route = {{Host}}/api/Category
+
+POST {{Route}}/add-category
+Content-Type: application/json
+
+{
+  "title": "گروه ۶",
+  "description": "توضیحات مربوط به گروه ۶"
+}
+######################
+
+DELETE {{Route}}/delete-category
+Content-Type: application/json
+
+{
+  "Code" : "9e3848e9-c934-4d67-bc87-29aee1f4ea88"
+}
+######################
+
+GET {{Route}}/
+Content-Type: application/json
+
+{
+  "page": 1,
+  "size": 2,
+  "sortAscending": false,
+  "sortBy": "Id",
+  "neededTotalCount": true,
+  "title": "گروه"
+}
+######################

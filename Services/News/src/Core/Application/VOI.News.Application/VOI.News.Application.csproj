@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Contract\VOI.News.Contract\VOI.News.Contract.csproj" />
+    <ProjectReference Include="..\..\Domain\VOI.News.Domian\VOI.News.Domian.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Exception\" />
+    <Folder Include="Validator\" />
+    <Folder Include="Event\" />
+  </ItemGroup>
+
+</Project>

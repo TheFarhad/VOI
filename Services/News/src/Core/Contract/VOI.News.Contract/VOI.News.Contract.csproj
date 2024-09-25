@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Application\Event\" />
+    <Folder Include="Application\Shared\" />
+    <Folder Include="Infrastructure\ExternalService\" />
+    <Folder Include="Infrastructure\Persistence\Shared\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\VOI.News.Domian\VOI.News.Domian.csproj" />
+  </ItemGroup>
+
+</Project>
